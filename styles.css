@@ -1,0 +1,64 @@
+/* Minimal, readable, monospaced theme inspired by the screenshot */
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #444444;
+  --link: #111111;
+  --accent: #111111;
+  --maxw: 900px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 48px auto 96px auto;
+  padding: 0 24px;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+h1 { font-size: 40px; letter-spacing: 0.5px; }
+h2 { font-size: 28px; }
+
+p { margin: 0 0 16px 0; }
+
+.intro { margin-bottom: 40px; }
+
+.block { margin: 40px 0; }
+
+ul { margin: 0; padding-left: 24px; }
+li { margin: 8px 0; }
+
+a { color: var(--link); text-decoration: none; border-bottom: 2px solid transparent; }
+a:hover { border-bottom-color: var(--accent); }
+.underlined { border-bottom: 4px solid var(--accent); }
+
+.note { color: var(--muted); }
+
+.links { margin-top: 16px; }
+.links a { font-weight: 600; }
+.links span { color: var(--muted); }
+
+.foot { margin-top: 56px; text-align: left; color: var(--muted); }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .container { margin: 32px auto 64px auto; padding: 0 16px; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 22px; }
+}
+
+
