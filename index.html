@@ -4,96 +4,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jash Shah</title>
-    <meta name="description" content="Jash Shah. Prototype-to-production AI systems: LLM chatbots, RAG/GraphRAG, agents, automations, and infra.">
+    <meta name="description" content="Jash Shah — AI/ML engineer. LLMs, agents, RAG, and production systems.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./analytics.js"></script>
   </head>
   <body>
     <main class="container">
-      <header class="intro" id="top">
-        <h1>hi, i am <a href="#top" class="underlined">jash shah</a>!</h1>
-        <p>
-          i am an <strong>ai solutions specialist</strong> with <strong>4+ years</strong> of experience.
-          i build intelligent systems that move from <em>prototype</em> → <em>production</em>.
-        </p>
+      <header class="site-head" id="top">
+        <nav class="site-nav">
+          <a href="./index.html">about</a>
+          <a href="./blog.html">blog</a>
+          <a href="./publications.html">publications</a>
+          <a href="./projects.html">projects</a>
+          <a href="./Jash_Resume.pdf" download>cv</a>
+          <a href="./teaching.html">teaching</a>
+        </nav>
+        <h1><strong>Jash</strong> Shah</h1>
+        <p class="affil">AI/ML Engineer. LLMs, Agents, RAG. Final‑year B.Tech @ DA‑IICT.</p>
       </header>
 
-      <section class="block" id="expertise">
-        <h2>core expertise</h2>
-        <ul>
-          <li>llm-powered chatbots</li>
-          <li>rag & graphRAG pipelines</li>
-          <li>ai automation with n8n</li>
-          <li>langgraph-powered ai agents</li>
-          <li>fine-tuning open-source models (llama, qwen)</li>
-          <li>backend & infra: fastapi, aws, dynamodb, langchain, llamaindex</li>
-        </ul>
-        <p class="note">i design <strong>scalable ai-first solutions</strong> end-to-end.</p>
-      </section>
+      <section class="grid two-col">
+        <div class="col main-col">
+          <section id="about" class="section">
+            <h2>about me</h2>
+            <ul class="tight">
+              <li>Final-year B.Tech student at <strong>DA‑IICT</strong>.</li>
+              <li>Proficient in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, <strong>LLMs</strong>, and <strong>Reinforcement Learning</strong>.</li>
+              <li>Experienced with <strong>LangChain</strong>, <strong>LangGraph</strong>, <strong>Django</strong>, <strong>FastAPI</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>AWS</strong>.</li>
+              <li>Convenor of the <strong>AI Club @ DA‑IICT</strong>; mentored 100+ students and led <em>Prompt‑a‑Thon</em> and <em>AI Odyssey</em>.</li>
+              <li>Core team, <strong>GDG DA‑IICT</strong>; co‑organized <strong>DevFest</strong> with 15+ speakers and 500+ participants.</li>
+              <li>Technical writer; recent blog reached 1000+ views and 500+ reads on Medium.</li>
+            </ul>
+          </section>
 
-      <section class="block" id="collab">
-        <h2>collaboration opportunities</h2>
-        <ul>
-          <li><strong>startups</strong>: leverage ai for rapid growth & disruption.</li>
-          <li><strong>enterprises</strong>: integrate ai into existing operations to stay competitive.</li>
-          <li><strong>founders</strong>: bring ai-powered ideas to life from scratch.</li>
-        </ul>
-        <p class="note">i focus on projects that go from <em>idea</em> to <em>impact</em>.</p>
-      </section>
+          <section id="contact" class="section">
+            <h2>get in touch</h2>
+            <nav class="links">
+              <a href="https://www.linkedin.com/in/jashshah0803/" target="_blank" rel="noopener">linkedin</a>
+              <span>·</span>
+              <a href="https://github.com/jash0803" target="_blank" rel="noopener">github</a>
+              <span>·</span>
+              <a href="https://medium.com/@jashshah780" target="_blank" rel="noopener">medium</a>
+              <span>·</span>
+              <a href="https://x.com/jashshah0803" target="_blank" rel="noopener">x</a>
+            </nav>
+          </section>
 
-      <section class="block" id="highlights">
-        <h2>career highlights</h2>
-        <ul>
-          <li>
-            <strong>generative ai engineer @ substanceAI</strong> — took product from 0 → 1 (idea → mvp in 6 months). built with ai agents, gpt‑4 vision, and scalable backend infra.
-          </li>
-          <li>
-            <strong>zerobalance success</strong> — helped reach #1 product of the day on product hunt via seo + content strategy.
-          </li>
-        </ul>
+          <footer class="foot">
+            <small>© <span id="year"></span> Jash Shah</small>
+          </footer>
+        </div>
+        <aside class="col side-col">
+          <figure class="profile-card">
+            <img src="./jash.jpeg" alt="Jash Shah" class="avatar">
+          </figure>
+          <address class="address">
+            <div>DA‑IICT</div>
+            <div>Gandhinagar, Gujarat</div>
+            <div>India</div>
+          </address>
+        </aside>
       </section>
-
-      <section class="block" id="projects">
-        <h2>projects</h2>
-        <ul>
-          <li><strong>cram ai</strong> — rag-powered study platform (summaries, quizzes, q&a in streamlit).</li>
-          <li><strong>aya indic qwen3 instruct</strong> — fine-tuned qwen‑3 8b on indic languages (multilingual ai).</li>
-          <li><strong>financial asset recommendation engine</strong> — hybrid recommender (collab filtering + content + risk profiling).</li>
-          <li><strong>multimodal character recognition</strong> — combined clip (images) + bart (text) to extract structured attributes.</li>
-          <li><strong>indian stock market mcp server</strong> — integrated with claude to deliver real-time stock insights.</li>
-          <li><strong>ai automation with n8n</strong> — support agent pipeline (email + slack), vector dbs & llm reasoning.</li>
-        </ul>
-      </section>
-
-      <section class="block" id="contact">
-        <h2>get in touch</h2>
-        <p>if you're looking for someone to bring ai ideas to life, from prototype to production, let's connect. i'd love to help you turn your vision into an ai-powered reality.</p>
-        <nav class="links">
-          <a href="https://www.linkedin.com/in/jashshah0803/" target="_blank" rel="noopener">linkedin</a>
-          <span> | </span>
-          <a href="https://github.com/jash0803" target="_blank" rel="noopener">github</a>
-          <span> | </span>
-          <a href="https://www.youtube.com/@jash0803" target="_blank" rel="noopener">youtube</a>
-          <span> | </span>
-          <a href="https://x.com/jashshah0803" target="_blank" rel="noopener">x</a>
-          <span> | </span>
-          <a href="https://www.instagram.com/jash0803/" target="_blank" rel="noopener">instagram</a>
-          <span> | </span>
-          <a href="https://medium.com/@jashshah780" target="_blank" rel="noopener">medium</a>
-          <span> | </span>
-          <a href="https://calendar.app.google/5UpA1ZRfTm75jQGj7" target="_blank" rel="noopener">book a call</a>
-          <span> | </span>
-          <a href="https://drive.google.com/file/d/1oW4lIOj61Ln9CScxYvoakyzvZDTgPouC/view?usp=sharing" target="_blank" rel="noopener">resume</a>
-          <span> | </span>
-          <a href="https://jash0803.github.io/" target="_blank" rel="noopener">website</a>
-        </nav>
-      </section>
-
-      <footer class="foot">
-        <small>© <span id="year"></span> jash shah — built with love and ai.</small>
-      </footer>
     </main>
 
     <script src="./script.js"></script>

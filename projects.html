@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects — Jash Shah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./analytics.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="site-head">
+        <nav class="site-nav">
+          <a href="./index.html">about</a>
+          <a href="./blog.html">blog</a>
+          <a href="./publications.html">publications</a>
+          <a href="./projects.html">projects</a>
+          <a href="./Jash_Resume.pdf" download>cv</a>
+          <a href="./teaching.html">teaching</a>
+        </nav>
+        <h1>projects</h1>
+      </header>
+
+      <section class="section">
+        <p class="muted">Practical builds focused on measurable impact.</p>
+        <div class="projects">
+          <div class="project">
+            <a href="https://github.com/jash0803/Edge-StyleGAN" target="_blank" rel="noopener">Edge GAN</a>
+            <p>EdgeStyleGAN is a lightweight variant of StyleGAN optimized for efficient deployment on resource-constrained devices such as mobile phones and edge computing devices. Our approach achieves significant reductions in model size and inference time while preserving high-quality image generation capabilities.</p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/jash0803/aya-indic-qwen3-4B-instruct" target="_blank" rel="noopener">Aya‑Indic‑Qwen3‑4B</a>
+            <p>This project fine-tunes Qwen3-4B-Instruct on the Indic subset of the Aya dataset using Unsloth. The goal is to improve instruction-following and conversational abilities of the model in Indian languages such as Hindi, Bengali, Tamil, Telugu, and others.</p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/jash0803/financial-asset-recommendation" target="_blank" rel="noopener">Financial Asset Recommendation</a>
+            <p>Engineered a hybrid recommendation engine integrating Truncated SVD–based collaborative filtering, content-based scoring via cosine similarity, and demographic risk profiling on the FAR-Trans dataset (introduced at IJCAI-2024).</p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/jash0803/whos-that-character" target="_blank" rel="noopener">Who’s That Character</a>
+            <p>Built a multi-modal character attribute extraction pipeline using CLIP (image) and BART (text), capable of processing 9 structured attributes (age, gender, ethnicity, hairstyle, hair color, eye color, body type, clothing style).</p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/jash0803/cram-ai" target="_blank" rel="noopener">Cram AI</a>
+            <p>A comprehensive web application that uses RAG (Retrieval-Augmented Generation) to help students upload PDFs, organize by subject/topic, and instantly generate summaries, quizzes, and intelligent Q&A content for fast, effective last-minute studying.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot"><small>© <span id="year"></span> Jash Shah</small></footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
+

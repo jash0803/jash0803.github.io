@@ -1,11 +1,11 @@
-/* Minimal, readable, monospaced theme inspired by the screenshot */
+/* Minimal academic profile theme */
 :root {
   --bg: #ffffff;
   --fg: #111111;
-  --muted: #444444;
-  --link: #111111;
-  --accent: #111111;
-  --maxw: 900px;
+  --muted: #777777;
+  --ink: #111111;
+  --accent: #e10087; /* pink accent similar to theme */
+  --maxw: 1040px;
 }
 
 * { box-sizing: border-box; }
@@ -15,50 +15,77 @@ html, body {
   padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "IBM Plex Mono", monospace;
   line-height: 1.6;
 }
 
 .container {
   max-width: var(--maxw);
-  margin: 48px auto 96px auto;
-  padding: 0 24px;
+  margin: 24px auto 96px auto;
+  padding: 0 20px;
 }
 
 h1, h2 {
-  font-weight: 700;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
 }
 
-h1 { font-size: 40px; letter-spacing: 0.5px; }
-h2 { font-size: 28px; }
+h1 { font-size: 46px; font-weight: 800; letter-spacing: 0.2px; }
+h2 { font-size: 22px; text-transform: lowercase; font-weight: 700; color: var(--ink); }
 
 p { margin: 0 0 16px 0; }
 
-.intro { margin-bottom: 40px; }
+.site-head { margin-bottom: 24px; }
+.site-nav { display: flex; gap: 18px; margin-bottom: 8px; }
+.site-nav a { color: var(--ink); text-decoration: none; font-size: 14px; border-bottom: 2px solid transparent; }
+.site-nav a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+.affil { color: var(--muted); }
 
-.block { margin: 40px 0; }
+.section { margin: 28px 0; }
 
 ul { margin: 0; padding-left: 24px; }
-li { margin: 8px 0; }
+li { margin: 6px 0; }
+.tight li { margin: 4px 0; }
+.spacious li { margin: 10px 0; }
 
-a { color: var(--link); text-decoration: none; border-bottom: 2px solid transparent; }
-a:hover { border-bottom-color: var(--accent); }
-.underlined { border-bottom: 4px solid var(--accent); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-.note { color: var(--muted); }
+.muted { color: var(--muted); }
 
-.links { margin-top: 16px; }
-.links a { font-weight: 600; }
-.links span { color: var(--muted); }
+.links { margin-top: 8px; }
+.links a { color: var(--accent); font-weight: 600; }
+.links span { color: var(--muted); margin: 0 8px; }
 
-.foot { margin-top: 56px; text-align: left; color: var(--muted); }
+.grid.two-col { display: grid; grid-template-columns: 1fr 300px; gap: 32px; align-items: start; }
+.col { width: 100%; }
+.side-col { position: sticky; top: 24px; height: fit-content; }
+.profile-card { margin: 0; }
+.avatar { width: 100%; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.address { margin-top: 12px; font-style: normal; color: var(--muted); line-height: 1.5; }
+
+.foot { margin-top: 40px; text-align: left; color: var(--muted); }
 
 /* Responsive tweaks */
 @media (max-width: 640px) {
-  .container { margin: 32px auto 64px auto; padding: 0 16px; }
-  h1 { font-size: 32px; }
-  h2 { font-size: 22px; }
+  .container { margin: 24px auto 56px auto; padding: 0 16px; }
+  .grid.two-col { grid-template-columns: 1fr; }
+  .side-col { position: static; }
+  h1 { font-size: 34px; }
+  h2 { font-size: 20px; }
 }
+
+/* Blog listing */
+.posts { margin-top: 16px; }
+.post-head { display: grid; grid-template-columns: 1fr 120px 120px; gap: 16px; padding: 8px 0; color: var(--muted); font-size: 14px; border-bottom: 1px solid #eee; }
+.post-row { display: grid; grid-template-columns: 1fr 120px 120px; gap: 16px; padding: 20px 0; border-bottom: 1px solid #f1f1f1; align-items: center; }
+.post-title { margin: 0 0 6px 0; font-size: 20px; font-weight: 700; color: var(--ink); }
+.post-meta { color: var(--muted); font-size: 14px; }
+.post-num { text-align: right; font-weight: 700; color: var(--ink); }
+
+/* Projects list */
+.project { margin-bottom: 20px; }
+.project a { font-weight: 700; color: var(--accent); }
+.project a:hover { color: var(--accent); text-decoration: underline; }
+.project p { margin: 6px 0 0 0; color: var(--muted); }
 
 
