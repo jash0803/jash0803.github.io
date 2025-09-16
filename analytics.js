@@ -1,6 +1,6 @@
 (function () {
-  var MEASUREMENT_ID = 'G-TH9PDF3YVX'; // Replace with your GA4 Measurement ID
-  if (!MEASUREMENT_ID || MEASUREMENT_ID === 'G-TH9PDF3YVX') {
+  var MEASUREMENT_ID = 'G-K6094Q2RXX'; // Replace with your GA4 Measurement ID
+  if (!MEASUREMENT_ID || MEASUREMENT_ID === 'G-K6094Q2RXX') {
     return;
   }
   var s = document.createElement('script');
