@@ -72,6 +72,8 @@ a:hover { text-decoration: underline; }
   .side-col { position: static; }
   h1 { font-size: 34px; }
   h2 { font-size: 20px; }
+  .site-nav { flex-wrap: wrap; row-gap: 8px; }
+  .product-card { grid-template-columns: 1fr; padding: 18px; }
 }
 
 /* Blog listing */
@@ -87,6 +89,110 @@ a:hover { text-decoration: underline; }
 .project a { font-weight: 700; color: var(--accent); }
 .project a:hover { color: var(--accent); text-decoration: underline; }
 .project p { margin: 6px 0 0 0; color: var(--muted); }
+
+/* Products */
+.product-showcase {
+  display: grid;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  align-items: start;
+  background: #fff;
+}
+
+.product-media img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.product-content h2 {
+  margin-bottom: 6px;
+}
+
+.product-eyebrow {
+  margin: 0 0 10px 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.product-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 14px 0 0 0;
+}
+
+.product-links a {
+  font-weight: 600;
+}
+
+.feature-list {
+  margin: 14px 0 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.feature-list li {
+  margin: 8px 0;
+}
+
+.product-demo {
+  position: relative;
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #111;
+}
+
+.product-demo img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+}
+
+.product-demo-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to top, rgba(17,17,17,0.7), rgba(17,17,17,0.2));
+}
+
+.product-demo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.product-demo-badge::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid var(--accent);
+}
 
 /* Gallery */
 .gallery-grid {
